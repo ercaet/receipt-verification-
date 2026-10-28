@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receipt Verification - Ministry of Revenue</title>
+  <style>
+    :root {
+      --primary-color: #0d47a1;
+      --primary-dark: #002171;
+      --bg-color: #f4f6f9;
+      --card-bg: #ffffff;
+      --text-main: #212529;
+      --text-muted: #6c757d;
+      --border-color: #e9ecef;
+      --success-green: #2e7d32;
+      --success-bg: #e8f5e9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Ethiopic", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      margin-top: 10px;
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: var(--success-bg);
+      color: var(--success-green);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .status-badge::before {
+      content: "✓";
+      font-weight: bold;
+    }
+
+    /* Details List Styling */
+    .details-list {
+      padding: 16px 20px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .field-group:last-child {
+      border-bottom: none;
+    }
+
+    .field-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .field-value {
+      font-size: 0.98rem;
+      color: var(--text-main);
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #fafafa;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Ministry of Revenue</h1>
+      <div class="status-badge">Valid Receipt</div>
+    </div>
+
+    <!-- Details Section -->
+    <div class="details-list">
+      <div class="field-group">
+        <span class="field-label">የደረሰኝ መለያ ቁጥር</span>
+        <span class="field-value">151</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የግብር ከፋይ መለያ ቁጥር</span>
+        <span class="field-value">0110574695</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የደረሰኝ ዓይነት</span>
+        <span class="field-value">CASH SALES INVOICE/VAT</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የግብር ከፋይ ስም</span>
+        <span class="field-value">MOHAMMED AND ILIYAS BUILDING CONSTRUCTION</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የግብር ከፋይ ታክስ ማዕከል</span>
+        <span class="field-value">OROMIA-JIMMA CITY ADMIN REVENUE BUREAU</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የቪኤቲ/VAT/ መለያ ቁጥር</span>
+        <span class="field-value">42569920920</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የቪኤቲ/VAT/ ቁጥር</span>
+        <span class="field-value">5368080920</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">የማተሚያ ቤት ስም</span>
+        <span class="field-value">BERHANENA SELAM PRINTING ENTERPRISE</span>
+      </div>
+    </div>
+
+    <!-- Verification Footer -->
+    <div class="footer">
+      Official Verification Portal • Document Verified
+    </div>
+  </div>
+
+</body>
+</html>
